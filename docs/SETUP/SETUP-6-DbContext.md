@@ -84,7 +84,7 @@ if (app.Environment.IsDevelopment())
 }
 ```
 
-Adicione o método .PopulateTestData()
+Adicione o método .PopulateTestData() à classe de contexto:
 
 ```csharp
 
