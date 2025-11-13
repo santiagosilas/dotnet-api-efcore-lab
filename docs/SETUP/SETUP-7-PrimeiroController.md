@@ -9,6 +9,11 @@ using Microsoft.EntityFrameworkCore;
 
 using api.Models;
 using api.Data;
+// using api.DTOs; // Este conceito será mais explicado adiante ...
+
+using Entity = api.Models.Tarefa;
+using DTO = api.DTOs.TarefaDTO;
+using DTOCreate = api.DTOs.TarefaDTOCreate;
 
 namespace api.Controllers
 {
@@ -30,7 +35,7 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Tarefa>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<Tarefa>>> GetTarefas()
         {
             return await _context.Tarefas
                 .Select(tarefa => tarefa)
