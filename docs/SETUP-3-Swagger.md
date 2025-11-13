@@ -24,6 +24,10 @@ builder.Services.AddEndpointsApiExplorer(); // Swagger/OpenAPI - https://aka.ms/
 builder.Services.AddSwaggerGen();
 // builder.Services.AddOpenApi();  // Vem por padrão ao criar o projeto
 
+
+
+
+
 var app = builder.Build();
 
 . . .
