@@ -34,6 +34,20 @@ dotnet add package Swashbuckle.AspNetCore
 dotnet add package BCrypt.Net-Next
 ```
 
+Atualização: A versão 10 do .Net apresentou erros para o BD Postgres. Assim, vou usar a versão 9.0.
+Ao instalar os pacotes, especificar a versão:  --version 9.0.
+
+```shell
+dotnet add package Microsoft.EntityFrameworkCore  --version 9.0
+dotnet add package Microsoft.EntityFrameworkCore.Design  --version 9.0
+dotnet add package Microsoft.EntityFrameworkCore.InMemory  --version 9.0
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite  --version 9.0
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL  --version 9.0
+dotnet add package Microsoft.EntityFrameworkCore.Tools  --version 9.0
+dotnet add package Swashbuckle.AspNetCore 
+dotnet add package BCrypt.Net-Next
+```
+
 ## Instalar (globalmente) a ferramenta de linha de comando do EF Core Tools
 
 ```
