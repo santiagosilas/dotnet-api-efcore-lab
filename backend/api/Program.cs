@@ -23,8 +23,8 @@ builder.Services.AddSwaggerGen();
 
 // Adiciona o contexto do bd ao contêiner de serviços (DI - Dependency Injection)
 // builder.Services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase("MemoryDb"));
-builder.Services.AddDbContext<ApiContext>(opt => opt.UseSqlite(stcnn));
-// builder.Services.AddDbContext<ApiContext>(opt => opt.UseNpgsql(stcnn2));
+//builder.Services.AddDbContext<ApiContext>(opt => opt.UseSqlite(stcnn));
+builder.Services.AddDbContext<ApiContext>(opt => opt.UseNpgsql(stcnn2));
 
 // Adicionar politica de CORS (Cross-Origin Resource Sharing)
 // É um mecanismo de segurança implementado pelos navegadores
