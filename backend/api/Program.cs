@@ -2,6 +2,9 @@ using api.Data;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
 
+using api.Repositories;
+using api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 string? stcnn = builder.Configuration.GetConnectionString("SqliteConnection");
@@ -25,6 +28,11 @@ builder.Services.AddSwaggerGen();
 // builder.Services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase("MemoryDb"));
 //builder.Services.AddDbContext<ApiContext>(opt => opt.UseSqlite(stcnn));
 builder.Services.AddDbContext<ApiContext>(opt => opt.UseNpgsql(stcnn2));
+
+// Registro no Container de Injeção de Dependência (DI) - Repositório e Services
+builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
+builder.Services.AddScoped<IContatoService, ContatoService>();
+
 
 // Adicionar politica de CORS (Cross-Origin Resource Sharing)
 // É um mecanismo de segurança implementado pelos navegadores
