@@ -27,6 +27,7 @@ dotnet new sln -n dotnet-api-efcore
 
 ```
 dotnet new webapi --use-controllers -o api
+dotnet new webapi --framework net9.0 --use-controllers -o api
 ```
 
 ## Adicionar o projeto api à solução

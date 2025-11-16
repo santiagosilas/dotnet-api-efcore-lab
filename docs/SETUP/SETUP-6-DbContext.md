@@ -3,7 +3,7 @@
 Crie uma pasta _Data/_. Nesta pasta, crie o arquivo ApiContext.cs:
 
 ```csharp
-namespace api.Data;us
+namespace api.Data;
 using Microsoft.EntityFrameworkCore;
 using api.Models;
 
