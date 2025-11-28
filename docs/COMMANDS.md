@@ -1,5 +1,7 @@
 # Comandos Úteis
 
+Uso dos comandos da ferramenta .NET CLI (Command Line Interface)
+
 ## Executar a Api
 
 dotnet watch run --launch-profile https
@@ -8,10 +10,16 @@ dotnet watch run --launch-profile https
 
 https://localhost:7181/swagger/index.html
 
-## Criar Migração
+## Criar o Script de Migração
 
 dotnet ef migrations add NomeDaMigracao
 
-## Aplicar Migração
+## Aplicar Migração (para gerar o banco e as tabelas)
+
+(Gera-se o BD e tabelas com base no script de migração)
 
 dotnet ef database update
+
+## Remove o script de migração criado
+
+dotnet ef migrations remove NomeDaMigracao

@@ -48,6 +48,8 @@ dotnet add package Swashbuckle.AspNetCore
 dotnet add package BCrypt.Net-Next
 ```
 
+Para o MySQL: Pomelo.EntityFrameworkCore.MySql
+
 ## Instalar (globalmente) a ferramenta de linha de comando do EF Core Tools
 
 ```

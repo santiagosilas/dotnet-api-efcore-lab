@@ -30,6 +30,8 @@ dotnet new webapi --use-controllers -o api
 dotnet new webapi --framework net9.0 --use-controllers -o api
 ```
 
+Observação: No Visual Studio Community Edition, há o template "ASP.Net Core Web API"
+
 ## Adicionar o projeto api à solução
 
 ```

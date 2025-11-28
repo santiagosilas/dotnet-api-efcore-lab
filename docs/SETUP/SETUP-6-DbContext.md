@@ -44,6 +44,8 @@ builder.Services.AddDbContext<ApiContext>(opt => opt.UseNpgsql(stcnn2));
 
 ## Criar a primeira Migration (para um BD físico)
 
+EF Core Migrations - Para atualizar incrementalmente o BD sem perda de dados existentes;
+
 ```shell
 dotnet ef migrations add InitialCreate
 (uma pasta chamada Migrations será criada)
