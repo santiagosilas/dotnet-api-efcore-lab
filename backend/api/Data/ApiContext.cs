@@ -7,8 +7,17 @@ using api.Models.One2Many;
 using api.Models.Many2Many;
 using api.Models.Many2Many2;
 
+/// <summary>
+/// Classe de contexto do Entity Framework Core para a API
+/// Para definir o mapeamento das entidades para as tabelas do banco de dados
+/// Representa uma sessão com o BD
+/// </summary>
 public class ApiContext : DbContext
 {
+    /// <summary>
+    /// Para configurar o contexto na classe base
+    /// </summary>
+    /// <param name="options"></param>
     public ApiContext(DbContextOptions<ApiContext> options)
         : base(options)
     {
@@ -63,6 +72,10 @@ public class ApiContext : DbContext
 
     }
 
+    /// <summary>
+    /// DbSet<T>: COleção de entidades no contexto
+    /// </summary>
+
     public DbSet<Tarefa> Tarefas { get; set; } = null!;
 
     // Entidades com Relacionamento 1:1
@@ -110,6 +123,47 @@ public class ApiContext : DbContext
         Enderecos.Add(endereco1);
         SaveChanges();
         Console.WriteLine($"Contato adicionado: {contato1.Id} - {contato1.Nome} - Endereço: {endereco1.Rua}, {endereco1.Numero} - {endereco1.Rua}");
+
+        // Adiciona-se mais exemplos de contatos
+        string[] nomes1 = new string[]
+        {
+            "Ana Beatriz",
+            "Bruno Silva",
+            "Carla Mendes",
+            "Daniel Rocha",
+            "Eduarda Lima",
+            "Felipe Santos",
+            "Gabriela Torres",
+
+        };
+        foreach (var nome in nomes1) 
+        {
+            var ct = new Contato { Nome = nome,  Endereco = null };
+            Contatos.Add(ct);
+            SaveChanges();
+        }
+        string[] nomes2 = new string[]
+        {
+            "Henrique Alves",
+            "Isabela Souza",
+            "João Pedro",
+            "Karen Matos",
+            "Lucas Andrade",
+            "Mariana Costa",
+            "Nicolas Ferreira",
+            "Otávio Ribeiro"
+        };
+        foreach (var nome in nomes2)
+        {
+            var ct = new Contato { Nome = nome, Endereco = null };
+            Contatos.Add(ct);
+            var e = new Endereco { Rua = "Rua A", Numero = 123, Contato = ct };
+            Contatos.Add(ct);
+            Enderecos.Add(e);
+
+            SaveChanges();
+        }
+
 
         // Criação de Entidades One2Many de teste
         Console.WriteLine("Apago dados de teste One2Many...");

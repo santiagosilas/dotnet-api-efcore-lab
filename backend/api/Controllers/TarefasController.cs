@@ -39,6 +39,15 @@ namespace api.Controllers
                 .ToListAsync();
         }
 
+        [HttpGet("AllCompleted")]
+        public async Task<ActionResult<IEnumerable<TarefaDTO>>> GetAllCompleted()
+        {
+            return await _dbSet
+                .Select(tarefa => new TarefaDTO(tarefa))
+                .Where(tarefa => tarefa.IsCompleta)
+                .ToListAsync();
+        }
+
         [HttpPost]
         public async Task<ActionResult<DTO>> Add(DTOCreate dto)
         {

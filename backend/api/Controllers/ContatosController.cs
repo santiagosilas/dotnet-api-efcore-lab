@@ -31,13 +31,35 @@ namespace api.Controllers
         {
             _service = service;
         }
-        
+                
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ContatoDTO>>> GetAll()
         {
             var contatos = await this._service.GetAllContatos();
             return Ok(contatos);
         }
+
+        [HttpGet("SemEndereco")]
+        public async Task<ActionResult<IEnumerable<ContatoDTO>>> GetAllSemEndereco()
+        {
+            var contatos = await this._service.GetAllContatosSemEndereco();
+            return Ok(contatos);
+        }
+
+        [HttpGet("ComEndereco")]
+        public async Task<ActionResult<IEnumerable<ContatoComEnderecoDTO>>> GetAllComEndereco()
+        {
+            var contatos = await this._service.GetAllContatosComEndereco();
+            return Ok(contatos);
+        }
+
+        [HttpGet("Busca/{pageNumber}/{pageSize}")]
+        public async Task<ActionResult<IEnumerable<ContatoComEnderecoDTO>>> GetPaginated(int pageNumber, int pageSize, string? search)
+        {
+            var busca = await this._service.BuscaPaginada(pageNumber, pageSize, search);
+            return Ok(busca);
+        }
+
 
         [HttpPost]
         public async Task<ActionResult<ContatoDTO>> Create(ContatoDTOCreate dto)

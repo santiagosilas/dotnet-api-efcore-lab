@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using api.Repositories;
 using api.Services;
 
+// Instância da aplicação web
 var builder = WebApplication.CreateBuilder(args);
 
 string? stcnn = builder.Configuration.GetConnectionString("SqliteConnection");
@@ -27,7 +28,7 @@ builder.Services.AddSwaggerGen();
 // Adiciona o contexto do bd ao contêiner de serviços (DI - Dependency Injection)
 // builder.Services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase("MemoryDb"));
 //builder.Services.AddDbContext<ApiContext>(opt => opt.UseSqlite(stcnn));
-builder.Services.AddDbContext<ApiContext>(opt => opt.UseNpgsql(stcnn2));
+builder.Services.AddDbContext<ApiContext>(options => options.UseNpgsql(stcnn2));
 
 // Registro no Container de Injeção de Dependência (DI) - Repositório e Services
 builder.Services.AddScoped<IContatoRepository, ContatoRepository>();

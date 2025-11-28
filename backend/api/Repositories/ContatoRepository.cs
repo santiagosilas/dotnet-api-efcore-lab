@@ -3,6 +3,7 @@ using api.Models.One2One;
 
 using Microsoft.EntityFrameworkCore;
 
+// Padrão Repository: Para desacoplar o acesso aos dados da aplicação
 namespace api.Repositories
 {
     public class ContatoRepository: IContatoRepository
@@ -18,6 +19,41 @@ namespace api.Repositories
         {
             return await _context.Contatos.ToListAsync();
         }
+
+
+        public async Task<List<Contato>> GetAllContatosSemEndereco()
+        {
+            var contatos = await _context.Contatos
+                .Include(c => c.Endereco) // Eager Loading (JOIN para Trazer os Dados das Tabelas Relacionadas)
+                .Where(contato => contato.Endereco == null)
+                .ToListAsync();
+            return contatos;
+        }
+        public async Task<List<Contato>> GetAllContatosComEndereco()
+        {
+             
+            var contatos = await _context.Contatos
+                .Include(c => c.Endereco)  // Eager Loading (JOIN para Trazer os Dados das Tabelas Relacionadas)
+                .Where(contato => contato.Endereco != null)
+                .ToListAsync();
+            return contatos;
+        }
+
+        public async Task<List<Contato>> BuscaPaginada(int pageNumber, int pageSize, string? search = null ) 
+        {
+            var query = _context.Contatos.Select(c => c);
+
+            if (search != null)
+                query = query.Where(c => c.Nome.Contains(search));
+            
+            var data = await query    
+                .Include(c => c.Endereco)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+            return data;
+        }
+
 
         public async Task<Contato?> GetContatoById(int id)
         {
