@@ -1,0 +1,10 @@
+Abordagem Code-First: 
+    - A partir das entidades, cria-se as tabelas do banco de dados.
+    - Para o mapeamento das classes das entidades de domínio
+
+Classes Anêmicas, ou Classes POCO (Plain Old CLR Object), para definir propriedades:
+Tarefa
+Contato, Endereco
+Anotacao, Caderno
+Artigo, Revisao, Revisor
+Medico, Paciente

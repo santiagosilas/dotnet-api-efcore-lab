@@ -5,6 +5,7 @@ namespace api.Models.Many2Many
         public long Id { get; set; }
         public string Nome { get; set; } = string.Empty;
 
+        // Proriedade de navegação
         // Relac. N:N com PostInfo automático
         public ICollection<Medico> Medicos { get; set; } = new List<Medico>();
 
