@@ -6,6 +6,7 @@ using api.Models.One2One;
 using api.Models.One2Many;
 using api.Models.Many2Many;
 using api.Models.Many2Many2;
+using api.Models.EnvioDeArquivos;
 
 /// <summary>
 /// Classe de contexto do Entity Framework Core para a API
@@ -94,6 +95,8 @@ public class ApiContext : DbContext
     public DbSet<Artigo> Artigos { get; set; } = null!;
     public DbSet<Revisor> Revisores { get; set; } = null!;
     public DbSet<Revisao> Revisoes { get; set; } = null!;
+
+    public DbSet<Imagem> Imagens { get; set; } = null!;
 
 
     public void PopulateTestData()

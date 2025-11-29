@@ -1,9 +1,9 @@
 using api.Data;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
-
 using api.Repositories;
 using api.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 // Instância da aplicação web
 var builder = WebApplication.CreateBuilder(args);
@@ -21,8 +21,10 @@ builder.Services.AddControllers();
 
 // Configuração do Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer(); // Swagger/OpenAPI - https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddSwaggerGen();
-// builder.Services.AddOpenApi();  // Vem por padrão ao criar o projeto
+
+
+builder.Services.AddSwaggerGen(); // Testando o Padrão
+builder.Services.AddOpenApi();  // Vem por padrão ao criar o projeto
 
 
 // Adiciona o contexto do bd ao contêiner de serviços (DI - Dependency Injection)
@@ -56,15 +58,32 @@ builder.Services.AddCors(options =>
         });
 });
 
+// Habilita logs detalhados no swagger
+//builder.Services.AddSwaggerGen(c =>
+//{
+//    c.SupportNonNullableReferenceTypes();
+//});
+
+// habilita exceções detalhadas
+//builder.Logging.AddDebug();
+//builder.Logging.AddConsole();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    //app.UseSwagger();
+    //app.UseSwaggerUI();
+    
     // app.MapOpenApi();
+
+    app.MapOpenApi();        // Gera o documento OpenAPI (swagger.json)
+    //app.UseSwaggerUI();      // Mostra o Swagger UI
+    
+
+    app.UseSwagger();            // gera /swagger/v1/swagger.json
+    app.UseSwaggerUI();          // gera UI em /swagger
 
     using (var scope = app.Services.CreateScope())
     {
@@ -84,3 +103,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// Acesso ao Swagger
+// https://localhost:7181/swagger/index.html
