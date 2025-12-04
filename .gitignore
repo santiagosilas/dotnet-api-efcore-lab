@@ -9,6 +9,7 @@
 
 # Ignore Visual Studio temporary files, build results, and
 .vs/
+backend/.vs/
 
 # Ignora a pasta Uploads/
 Uploads/
