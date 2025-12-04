@@ -15,8 +15,7 @@ Console.WriteLine($"PgConnection: {stcnn2}");
 
 
 
-// Add services to the container.
-
+// Para que os controladores possam ser acessados, são adicionados ao container DI
 builder.Services.AddControllers();
 
 // Configuração do Swagger/OpenAPI

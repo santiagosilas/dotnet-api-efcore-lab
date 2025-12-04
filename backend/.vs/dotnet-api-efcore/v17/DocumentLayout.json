@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\controllers\\imagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\controllers\\imagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\dtos\\imagemdtoupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\dtos\\imagemdtoupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\dtos\\imagemdtocreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\dtos\\imagemdtocreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\dtos\\imagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\dtos\\imagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\models\\enviodearquivos\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\models\\enviodearquivos\\imagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\controllers\\tarefascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\controllers\\tarefascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\migrations\\20251128215752_entidadeimagem2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\migrations\\20251128215752_entidadeimagem2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|c:\\users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\controllers\\_readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C4DFE7E9-FFD6-4A5C-B15A-DD9247C0E0A9}|api\\api.csproj|solutionrelative:api\\controllers\\_readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,144 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImagemDTOUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTOUpdate.cs",
-              "RelativeDocumentMoniker": "api\\DTOs\\ImagemDTOUpdate.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTOUpdate.cs",
-              "RelativeToolTip": "api\\DTOs\\ImagemDTOUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T13:20:15.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Imagem.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Models\\EnvioDeArquivos\\Imagem.cs",
-              "RelativeDocumentMoniker": "api\\Models\\EnvioDeArquivos\\Imagem.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Models\\EnvioDeArquivos\\Imagem.cs",
-              "RelativeToolTip": "api\\Models\\EnvioDeArquivos\\Imagem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T12:31:34.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\appsettings.json",
-              "RelativeDocumentMoniker": "api\\appsettings.json",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\appsettings.json",
-              "RelativeToolTip": "api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-28T23:20:47.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Program.cs",
-              "RelativeDocumentMoniker": "api\\Program.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Program.cs",
-              "RelativeToolTip": "api\\Program.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAIA0wDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T23:04:52.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "api.http",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\api.http",
-              "RelativeDocumentMoniker": "api\\api.http",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\api.http",
-              "RelativeToolTip": "api\\api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-28T22:34:48.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-28T22:34:38.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImagensController.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\ImagensController.cs",
-              "RelativeDocumentMoniker": "api\\Controllers\\ImagensController.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\ImagensController.cs",
-              "RelativeToolTip": "api\\Controllers\\ImagensController.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAwwNgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T22:05:08.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImagemDTOCreate.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTOCreate.cs",
-              "RelativeDocumentMoniker": "api\\DTOs\\ImagemDTOCreate.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTOCreate.cs",
-              "RelativeToolTip": "api\\DTOs\\ImagemDTOCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T22:03:13.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImagemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTO.cs",
-              "RelativeDocumentMoniker": "api\\DTOs\\ImagemDTO.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\DTOs\\ImagemDTO.cs",
-              "RelativeToolTip": "api\\DTOs\\ImagemDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T22:00:32.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20251128215752_EntidadeImagem2.cs",
-              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Migrations\\20251128215752_EntidadeImagem2.cs",
-              "RelativeDocumentMoniker": "api\\Migrations\\20251128215752_EntidadeImagem2.cs",
-              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Migrations\\20251128215752_EntidadeImagem2.cs",
-              "RelativeToolTip": "api\\Migrations\\20251128215752_EntidadeImagem2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T21:58:00.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "ApiContext.cs",
               "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Data\\ApiContext.cs",
               "RelativeDocumentMoniker": "api\\Data\\ApiContext.cs",
               "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Data\\ApiContext.cs",
               "RelativeToolTip": "api\\Data\\ApiContext.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAA0wGIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T21:57:07.25Z"
+              "WhenOpened": "2025-12-04T19:08:47.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_README.txt",
+              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\_README.txt",
+              "RelativeDocumentMoniker": "api\\Controllers\\_README.txt",
+              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\_README.txt",
+              "RelativeToolTip": "api\\Controllers\\_README.txt",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-04T18:59:22.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TarefasController.cs",
+              "DocumentMoniker": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\TarefasController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\TarefasController.cs",
+              "ToolTip": "C:\\Users\\sh\\repos\\wrk\\dotnet-api-efcore-lab\\backend\\api\\Controllers\\TarefasController.cs",
+              "RelativeToolTip": "api\\Controllers\\TarefasController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T18:57:07.864Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -12,6 +12,7 @@ using api.Models.EnvioDeArquivos;
 /// Classe de contexto do Entity Framework Core para a API
 /// Para definir o mapeamento das entidades para as tabelas do banco de dados
 /// Representa uma sessão com o BD
+/// Para usar o contexto, aplica-se o conceito de Injeção de Dependência
 /// </summary>
 public class ApiContext : DbContext
 {

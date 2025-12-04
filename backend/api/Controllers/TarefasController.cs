@@ -18,9 +18,13 @@ namespace api.Controllers
     /// Respostas são feitas por métodos "action"
     /// Sufixo Controller - O Framework busca por este sufixo
     /// Objeto ActionResult é o retorno de uma ação (action)
+    /// 
+    /// Atributo [ApiController] decora o controlador com recursos de Api
+    /// Atributo [Route("[controller]")] especifica um padrão de Url para acessar o Controller
+    /// Os métodos do controller~são também chamados de Actions;
     /// </summary>
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]")] // Definição da rota usando o nome do controlador
     public class TarefasController : ControllerBase
     {
         private readonly ApiContext _context;
@@ -34,9 +38,15 @@ namespace api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TarefaDTO>>> GetAll()
         {
-            return await _dbSet
+            var tarefas =  await _dbSet
                 .Select(tarefa => new TarefaDTO(tarefa))
                 .ToListAsync();
+
+            if (tarefas is null) 
+            {
+                return NotFound();
+            }
+            return tarefas;
         }
 
         [HttpGet("AllCompleted")]
@@ -62,6 +72,7 @@ namespace api.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(
+                // Adiciona-se no cabeçalho location da resposta http 
                 nameof(GetAll), // o nome da ação (método) que o cliente deve chamar para recuperar o recurso recém-criado.
                 new { id = item.Id },
                 new DTO(item));
@@ -79,6 +90,21 @@ namespace api.Controllers
 
             return new DTO(item);
         }
+
+        [HttpGet("GetById2/{id}")]
+        public async Task<ActionResult<DTO>> GetItemById2(long id)
+        {
+            var item = await _dbSet.FirstOrDefaultAsync(t => t.Id == id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return new DTO(item);
+        }
+
+
 
         [HttpGet("{pageNumber}/{pageSize}")]
         public async Task<ActionResult<IEnumerable<DTO>>> GetPaginated(int pageNumber, int pageSize)
